@@ -13,8 +13,8 @@ from random import randint, choice
 
 
 WEBSITE = "https://instagram.com"
-USERNAME = "koszernapantera"
-PASSWORD = "Q*Ac2Yc~$5NydVe"
+USERNAME = "login"
+PASSWORD = "password"
 TARGET_ACCOUNT = "9gag"
 
 class InstaFollower:
@@ -154,8 +154,6 @@ class InstaFollower:
             print("Account page not loaded correctly")
             return
 
-
-
     def follow(self):
 
         # click on followers:
@@ -221,12 +219,6 @@ class InstaFollower:
 
         try:
             self.driver.find_element(By.CLASS_NAME, '_abl-').click()
-            # to_close = [item for item in buttons if item.name == "Close"]
-            # if to_close:
-            #     to_close[0].click()
-            #     print("Closed Followers pop-up")
-            # else:
-            #     print("No close button")
         except:
             print("Failed to close Followers list")
         else:
@@ -245,10 +237,3 @@ if __name__ == '__main__':
     bot.find_followers(TARGET_ACCOUNT)
     for i in range(5):
         bot.follow()
-
-
-
-
-
-
-    
