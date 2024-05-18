@@ -141,7 +141,4 @@ def getRandomTime(min=3, max=5):
     return rand_time
 
 hashtags = ["#catsofinstagram", "#Siberiancat", "#siberiancatsofinstagram", "#siberiancats", "#siberiancatsofinstagram", "#catlife", "#catphotos", "#siberiancatlover"]
-InstaBot("xx", "xx", hashtags)
-
-# hashtags = ["#metalheadgirl", "#metalgirl", "#rockgirl", "#vikinggirl", "#viking"]
-# InstaBot("xx", "xx", hashtags)
+InstaBot("login", "pass", hashtags)
